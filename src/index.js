@@ -1,12 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+//import react into the bundle
+import React from "react";
+import ReactDOM from "react-dom";
+
+
+
+//include your index.scss file into the bundle
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//import your own components
+import { SecondsCounter } from "./component/counter.js";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+class App extends React.Component {
+	render() {
+		return (
+			<div>
+				<SecondsCounter number='3636'/>,
+			</div>
+		);
+	}
+}
+
+ReactDOM.render(<App />, document.getElementById("app"));

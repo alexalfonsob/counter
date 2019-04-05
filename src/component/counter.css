@@ -1,0 +1,33 @@
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: black;
+    height: 6em;
+
+}
+.containerCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30em;
+    height: 5em;
+
+}
+.number {
+
+    background: black;
+    text-align: center;
+    font-size: 3em;
+    border-radius: 10px;
+    margin: 2px;
+    width: 2em;
+    height: 1.2em;
+    border: 2px solid grey;
+}
+.img{
+  background-image: url("./img/reloj.png");
+
+}
